@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DELTHA — Premium Footwear</title>
+
+    <meta
+        name="description" content="DELTHA Premium Footwear — Sepatu modern dengan desain berkelas untuk setiap langkah Anda.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         LOADING
+    ========================== -->
+
+    <div class="loader" id="loader">
+        <div class="loader-logo">DELTHA</div>
+        <div class="loader-line"></div>
+    </div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                DELTHA<span>.</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#collection" class="nav-link">Collection</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button
+                    class="icon-button search-toggle"
+                    id="searchToggle"
+                    aria-label="Search"
+                >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button
+                    class="icon-button cart-toggle"
+                    id="cartToggle"
+                    aria-label="Shopping Cart"
+                >
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         SEARCH OVERLAY
+    ========================== -->
+
+    <div class="search-overlay" id="searchOverlay">
+
+        <div class="search-box">
+
+            <button class="close-search" id="closeSearch">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <p>SEARCH DELTHA</p>
+
+            <div class="search-input-wrapper">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Cari sepatu..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <p class="eyebrow">PREMIUM FOOTWEAR · EST. 2026</p>
+                <h1>Walk Your<span>Own Way.</span></h1>
+                <p class="hero-description">
+                    Sepatu premium dengan desain modern, material berkualitas,
+                    dan karakter yang dibuat untuk mereka yang berani tampil berbeda.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#collection" class="btn btn-primary">
+                        Explore Collection
+                        <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#about" class="btn btn-outline">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-product">
+                <div class="hero-circle"></div>
+                <div class="hero-shoe">
+                    <img src="img/DLTH-69.jpg" alt="DELTHA Premium Sneaker">
+                </div>
+                <div class="floating-card">
+                    <span>NEW DROP</span>
+                    <strong>DLTH-01</strong>
+                    <small>Limited Collection</small>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+        </section>
+
+        <!-- =========================
+             MARQUEE
+        ========================== -->
+
+        <section class="marquee">
+            <div class="marquee-track">
+                <span>PREMIUM MATERIALS</span>
+                <b>✦</b>
+                <span>MODERN DESIGN</span>
+                <b>✦</b>
+                <span>CRAFTED FOR MOVEMENT</span>
+                <b>✦</b>
+                <span>PREMIUM MATERIALS</span>
+                <b>✦</b>
+                <span>MODERN DESIGN</span>
+                <b>✦</b>
+                <span>CRAFTED FOR MOVEMENT</span>
+                <b>✦</b>
+            </div>
+        </section>
+
+        <!-- =========================
+             COLLECTION
+        ========================== -->
+
+        <section class="collection section" id="collection">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">THE COLLECTION</p>
+                        <h2>Designed to <em>Move.</em></h2>
+                    </div>
+                    <p class="section-description">
+                        Koleksi pilihan DELTHA untuk melengkapi setiap perjalanan,
+                        dari jalanan kota sampai momen spesial.
+                    </p>
+                </div>
+
+                <!-- FILTER -->
+
+                <div class="collection-toolbar">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active"
+                            data-category="all">All</button>
+
+                        <button class="filter-btn"
+                            data-category="sneakers">Sneakers</button>
+
+                        <button class="filter-btn"
+                            data-category="running">Running </button>
+
+                        <button class="filter-btn"
+                            data-category="casual">Casual</button>
+                    </div>
+                    <span class="product-result" id="productResult">6 Products</span>
+                </div>
+
+                <!-- PRODUCT GRID -->
+
+                <div class="product-grid" id="productGrid">
+
+                    <!-- Produk akan dibuat oleh JavaScript -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             FEATURE BANNER
+        ========================== -->
+
+        <section class="feature-banner">
+            <div class="feature-image">
+                <img src="img/DLTH-69.jpg" alt="DELTHA shoes">
+            </div>
+
+            <div class="feature-content">
+                <p class="eyebrow">DELTHA SIGNATURE</p>
+                <h2>Less Noise.<br><em>More Character.</em>
+                </h2>
+                <p>Kami percaya bahwa sepatu bukan sekadar sesuatu yang
+                dipakai untuk berjalan. Ia adalah bagian dari identitas.
+                Karena itu setiap detail dirancang dengan tujuan.</p>
+                <a href="#collection" class="text-link">Discover Signature
+                    <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p class="eyebrow">OUR PHILOSOPHY</p>
+                        <h2> Built for people<br><em> who keep moving.</em></h2>
+                        <p> DELTHA lahir dari sebuah ide sederhana:
+                            menciptakan footwear yang terlihat premium,
+                            terasa nyaman, dan tetap relevan bertahun-tahun
+                            setelah tren berlalu.</p>
+                        <p>Kami menggabungkan siluet kontemporer,
+                            material pilihan, dan perhatian terhadap detail
+                            untuk menghasilkan produk yang punya karakter.
+                        </p>
+                        <div class="about-stats">
+                            <div>
+                                <strong>06+</strong><span>Signature Products</span>
+                            </div>
+                            <div>
+                                <strong>2026</strong><span>Founded</span>
+                            </div>
+                            <div>
+                                <strong>100%</strong><span>Quality Focused</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="about-image-main">
+                            <img src="img/DLTH-69.jpg" alt="DELTHA footwear">
+                        </div>
+                        <div class="about-image-small">
+                            <img src="img/DLTH-69.jpg" alt="DELTHA shoes detail">
+                        </div>
+                        <div class="about-number"> 01</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             BENEFITS
+        ========================== -->
+
+        <section class="benefits section">
+            <div class="container">
+                <div class="benefit-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3>Premium Materials</h3>
+                        <p>Material pilihan untuk menjaga kenyamanan,
+                            durability, dan tampilan premium.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-feather"></i>
+                        </div>
+                        <h3>All-Day Comfort</h3>
+                        <p>Dibuat agar tetap nyaman digunakan dalam
+                            aktivitas panjang.</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+                        <h3>Secure Packaging</h3>
+                        <p>Setiap pesanan dikemas dengan aman dan
+                            siap dikirim ke tempatmu.</p>
+
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3>Personal Support</h3>
+                        <p>Hubungi kami untuk bantuan produk,
+                            ukuran, atau pemesanan. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             TESTIMONIAL
+        ========================== -->
+
+        <section class="testimonial section">
+
+            <div class="container">
+
+                <div class="testimonial-header">
+
+                    <p class="eyebrow">
+                        WHAT THEY SAY
+                    </p>
+
+                    <h2>
+                        Worn by <em>people.</em>
+                    </h2>
+
+                </div>
+
+                <div class="testimonial-grid">
+
+                    <article class="testimonial-card">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "Desainnya jauh lebih keren saat dipakai langsung.
+                            Nyaman banget dan finishing-nya kelihatan mahal."
+                        </p>
+
+                        <div class="customer">
+
+                            <div class="customer-avatar">
+                                AR
+                            </div>
+
+                            <div>
+                                <strong>Ardi Ramadhan</strong>
+                                <span>Verified Customer</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="testimonial-card featured-testimonial">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "DLTH-01 jadi salah satu sepatu favorit saya.
+                            Simple, clean, tapi tetap punya karakter."
+                        </p>
+
+                        <div class="customer">
+
+                            <div class="customer-avatar">
+                                NS
+                            </div>
+
+                            <div>
+                                <strong>Nadia Salsabila</strong>
+                                <span>Verified Customer</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="testimonial-card">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "Packaging-nya niat, produknya juga sesuai foto.
+                            Overall pengalaman belinya mantap."
+                        </p>
+
+                        <div class="customer">
+
+                            <div class="customer-avatar">
+                                RF
+                            </div>
+
+                            <div>
+                                <strong>Rafi Fadillah</strong>
+                                <span>Verified Customer</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FAQ
+        ========================== -->
+
+        <section class="faq section">
+
+            <div class="container">
+
+                <div class="faq-grid">
+
+                    <div class="faq-heading">
+
+                        <p class="eyebrow">
+                            NEED TO KNOW
+                        </p>
+
+                        <h2>
+                            Frequently Asked
+                            <em>Questions.</em>
+                        </h2>
+
+                        <p>
+                            Beberapa hal yang biasanya ditanyakan
+                            sebelum melakukan pemesanan.
+                        </p>
+
+                    </div>
+
+                    <div class="faq-list">
+
+                        <div class="faq-item">
+
+                            <button class="faq-question">
+                                Bagaimana cara melakukan order?
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    Pilih produk yang kamu inginkan,
+                                    masukkan ke keranjang, kemudian isi
+                                    data pemesanan. Setelah itu kamu dapat
+                                    mengirim detail order langsung melalui
+                                    WhatsApp.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="faq-item">
+
+                            <button class="faq-question">
+                                Apakah bisa bertanya sebelum membeli?
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    Bisa. Hubungi WhatsApp kami untuk
+                                    konsultasi ukuran, produk, stok,
+                                    maupun pertanyaan lainnya.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="faq-item">
+
+                            <button class="faq-question">
+                                Apakah tersedia pengiriman?
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    Ya. Detail pengiriman dan ongkos kirim
+                                    dapat dikonfirmasi saat proses order.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="faq-item">
+
+                            <button class="faq-question">
+                                Apakah bisa custom request?
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    Untuk permintaan khusus, silakan
+                                    hubungi tim DELTHA terlebih dahulu.
+                                    Kami akan mengecek apakah permintaan
+                                    tersebut dapat dipenuhi.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="contact section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-wrapper">
+
+                    <div class="contact-info">
+
+                        <p class="eyebrow">
+                            GET IN TOUCH
+                        </p>
+
+                        <h2>
+                            Let's talk about
+                            <em>your next pair.</em>
+                        </h2>
+
+                        <p>
+                            Punya pertanyaan, mau order, atau sekadar
+                            ingin konsultasi produk? Kirim pesan melalui
+                            form di samping.
+                        </p>
+
+
+                        <div class="contact-details">
+
+                            <a
+                                href="mailto:detihnilahsari@gmail.com"
+                                class="contact-detail"
+                            >
+
+                                <div class="contact-detail-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+
+                                <div>
+                                    <span>Email</span>
+                                    <strong>
+                                        detihnilahsari@gmail.com
+                                    </strong>
+                                </div>
+
+                            </a>
+
+
+                            <a
+                                href="https://wa.me/6283835154612"
+                                target="_blank"
+                                class="contact-detail"
+                            >
+
+                                <div class="contact-detail-icon">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+
+                                <div>
+                                    <span>WhatsApp</span>
+                                    <strong>
+                                        +62 838-3515-4612
+                                    </strong>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-form-wrapper">
+
+                        <form id="contactForm">
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="name">
+                                        Nama
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Nama lengkap"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="email">
+                                        Email
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="email@example.com"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Nomor WhatsApp
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="08xxxxxxxxxx">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Pesan / Keterangan
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Tuliskan pesan atau kebutuhanmu..."
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit">Kirim Pesan
+
+                            <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <p class="form-note">Pesan akan dibuka melalui aplikasi email kamu.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">DELTHA<span>.</span></a>
+
+                    <p>Premium footwear for people who keep moving.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/@venndw?igsh=MXJsNXl2YTBsaGftNg==" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@keretataekjesgejesgejes?_r=1&_t=ZS-98u3spTnTFM" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                        <a href="https://wa.me/6283835154612" target="_blank"aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <a href="#home">Home</a>
+                    <a href="#collection">Collection</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Order Help</a>
+                    <a href="#contact">Size Guide</a>
+                    <a href="#contact">Shipping</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <a href="mailto:detihnilahsari@gmail.com"> detihnilahsari@gmail.com</a>
+                    <a href="https://wa.me/6283835154612"target="_blank">+62 838-3515-4612</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 DELTHA. All rights reserved.</p>
+                <p>Crafted with intention.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================
+         PRODUCT MODAL
+    ========================== -->
+
+    <div class="modal-overlay" id="productModal">
+
+        <div class="product-modal">
+
+            <button
+                class="modal-close"
+                id="closeProductModal"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-product-image">
+
+                <img
+                    id="modalProductImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+            <div class="modal-product-content">
+
+                <span
+                    class="modal-category"
+                    id="modalProductCategory"
+                ></span>
+
+                <h2 id="modalProductName"></h2>
+
+                <p
+                    class="modal-price"
+                    id="modalProductPrice"
+                ></p>
+
+                <p
+                    class="modal-description"
+                    id="modalProductDescription"
+                ></p>
+
+
+                <div class="size-selection">
+
+                    <div class="size-title">
+
+                        <span>Select Size</span>
+
+                        <small>EU</small>
+
+                    </div>
+
+                    <div
+                        class="sizes"
+                        id="modalSizes"
+                    >
+
+                        <button data-size="39">39</button>
+                        <button data-size="40">40</button>
+                        <button data-size="41">41</button>
+                        <button data-size="42">42</button>
+                        <button data-size="43">43</button>
+                        <button data-size="44">44</button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="btn btn-primary modal-add-cart"
+                    id="modalAddCart"
+                >
+                    Add to Bag
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         CART SIDEBAR
+    ========================== -->
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <div>
+
+                <p class="eyebrow">
+                    YOUR BAG
+                </p>
+
+                <h2>
+                    Shopping Bag
+                </h2>
+
+            </div>
+
+            <button
+                class="cart-close"
+                id="cartClose"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <h3>Your bag is empty</h3>
+
+                <p>
+                    Tambahkan produk favoritmu ke dalam bag.
+                </p>
+
+                <button
+                    class="btn btn-outline"
+                    id="startShopping"
+                >
+                    Start Shopping
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer" id="cartFooter">
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    Rp 0
+                </strong>
+
+            </div>
+
+            <button
+                class="btn btn-primary checkout-btn"
+                id="checkoutBtn">Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <small>
+                Harga belum termasuk ongkir.
+            </small>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         CHECKOUT MODAL
+    ========================== -->
+
+    <div class="modal-overlay" id="checkoutModal">
+
+        <div class="checkout-modal">
+
+            <button
+                class="modal-close"
+                id="closeCheckout"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="checkout-heading">
+
+                <p class="eyebrow">
+                    CHECKOUT
+                </p>
+
+                <h2>
+                    Complete Your <em>Order.</em>
+                </h2>
+
+                <p>
+                    Isi data berikut lalu kirim order melalui WhatsApp.
+                </p>
+
+            </div>
+
+
+            <form id="checkoutForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="orderName">
+                            Nama
+                        </label>
+
+                        <input
+                            type="text"
+                            id="orderName"
+                            required
+                            placeholder="Nama lengkap"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="orderPhone">
+                            WhatsApp
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="orderPhone"
+                            required
+                            placeholder="08xxxxxxxxxx"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="orderAddress">
+                        Alamat Pengiriman
+                    </label>
+
+                    <textarea
+                        id="orderAddress"
+                        rows="3"
+                        required
+                        placeholder="Alamat lengkap..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="orderNote">
+                        Catatan
+                    </label>
+
+                    <textarea
+                        id="orderNote"
+                        rows="2"
+                        placeholder="Catatan tambahan..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="checkout-summary">
+
+                    <div class="summary-title">
+                        Order Summary
+                    </div>
+
+                    <div id="checkoutItems"></div>
+
+                    <div class="summary-total">
+
+                        <span>Total</span>
+
+                        <strong id="checkoutTotal">
+                            Rp 0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-whatsapp"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Send Order via WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+
+    <div class="toast" id="toast">
+
+        <i class="fa-solid fa-check"></i>
+
+        <span id="toastMessage">
+            Produk ditambahkan.
+        </span>
+
+    </div>
+
+
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
