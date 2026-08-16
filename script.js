@@ -1,5 +1,5 @@
 /* =========================================
-   DELTHA
+   DELFRONTDEV
    MAIN JAVASCRIPT
 ========================================= */
 
@@ -8,8 +8,8 @@
 ========================================= */
 
 const STORE_CONFIG = {
-    brandName: "DELTHA",
-    email: "detihnilahsari@gmail.com",
+    brandName: "DELFRONTDEV",
+    email: "realdsanz@gmail.com",
     whatsapp: "6283835154612"
 };
 
@@ -20,13 +20,13 @@ const STORE_CONFIG = {
 const products = [
     {
         id: 1,
-        name: "DLTH-01 Shadow",
+        name: "DLTH-01 RShadow",
         category: "sneakers",
         categoryLabel: "Sneakers",
         price: 899000,
         tag: "BEST SELLER",
         rating: 5,
-        image:"img/DLTH-69.jpg", 
+        image:"img/DLTH-01.jpg", 
         description:"Silhouette modern dengan karakter minimalis. Dirancang menggunakan material premium dan cushioning yang nyaman untuk penggunaan sehari-hari."
     },
 
@@ -38,32 +38,32 @@ const products = [
         price: 799000,
         tag: "NEW",
         rating: 5,
-        image: "img/DLTH-69.jpg",
+        image: "img/DLTH-02.jpg",
         description:"Sepatu casual dengan desain clean dan versatile. Cocok dipadukan dengan outfit santai maupun semi-formal."
     },
 
     {
         id: 3,
-        name: "DLTH-03 Motion",
+        name: "DLTH-03 MotionSpeed",
         category: "running",
         categoryLabel: "Running",
         price: 999000,
         tag: "PERFORMANCE",
         rating: 5,
-        image:"img/DLTH-69.jpg",
+        image:"img/DLTH-03.jpg",
         description:"Dibuat untuk movement. Sol responsif dan konstruksi ringan memberikan support untuk aktivitas harian maupun olahraga."
     },
 
 
     {
         id: 4,
-        name: "DLTH-04 Mono",
+        name: "DLTH-04 Ec",
         category: "sneakers",
         categoryLabel: "Sneakers",
         price: 849000,
         tag: "LIMITED",
         rating: 5,
-        image:"img/DLTH-69.jpg",
+        image:"img/DLTH-04.jpg",
         description:"Desain monochrome dengan detail subtle. Pilihan ideal untuk kamu yang menyukai tampilan clean dan understated."
     },
 
@@ -75,7 +75,7 @@ const products = [
         price: 749000,
         tag: "POPULAR",
         rating: 4,
-        image:"img/DLTH-69.jpg",
+        image:"img/DLTH-05.jpg",
         description:"Street-inspired footwear dengan bentuk kontemporer. Ringan, fleksibel, dan cocok digunakan sepanjang hari."
     },
 
@@ -87,7 +87,7 @@ const products = [
         price: 1099000,
         tag: "PREMIUM",
         rating: 5,
-        image:"img/DLTH-69.jpg",
+        image:"img/DLTH-06.jpg",
         description:"Model performance premium dengan konstruksi ringan dan breathable upper untuk kenyamanan maksimal saat bergerak."
     }
 ];
@@ -1421,14 +1421,14 @@ contactForm.addEventListener(
 
         const subject =
             encodeURIComponent(
-                `Pesan Website DELTHA dari ${name}`
+                `Pesan Website DELFRONTDEV dari ${name}`
             );
 
 
         const body =
             encodeURIComponent(
 
-                `Halo DELTHA,
+                `Halo DELFRONTDEV,
 
 Saya ${name} ingin menghubungi Anda.
 
